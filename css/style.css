@@ -19,19 +19,44 @@ p{
 header {
 	background-color:#33ffcc;
 	text-align: center;
-	padding:20px;
-}
-.wrapper{
-	background-color:#cccccc;
-	padding:40px 0 50px 0 ;
-}
-#message{
-	margin-top:80px;
-	float:right;
-	position:relative;
-	right:150px;
+	
 	padding:20px;
 	
+}
+@media screen and (min-width:760px){
+	.main img{
+		position:relative;
+		left:200px;
+	}
+	#message{
+		float:right;
+		text-align: center;
+		padding:20px;
+		top:30px;
+		position:relative;
+		right:140px;
+	}
+		
+}
+header img{
+	width:300px;
+}
+.wrapper{
+	width:100%;
+	height:auto;
+	background-color: #cccccc;
+}
+.main img{
+	width:400px;
+	text-align: center;
+	
+	margin-top: 60px;
+}
+
+.main #message{
+	text-align: center;
+	margin:20px;
+
 }
 .btn{
 	background-color:#fff;
@@ -42,7 +67,10 @@ header {
 	text-align: center;
 	font-size: 1.7em;
 	text-decoration: none;
-	margin:40px ;
+	left:20px;
+	margin:40px 0 0px 40px;
+	position:relative;
+	bottom:20px;
 	color:#666;
 	-moz-border-radius:7px;
 }
