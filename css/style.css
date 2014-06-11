@@ -27,8 +27,11 @@ header {
 }
 #message{
 	margin-top:80px;
+	float:right;
 	position:relative;
-	left:90px;
+	right:150px;
+	padding:20px;
+	
 }
 .btn{
 	background-color:#fff;
