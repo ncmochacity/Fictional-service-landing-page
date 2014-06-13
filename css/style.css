@@ -110,6 +110,7 @@ p.author{
 }
 #control{
 	margin-top:80px;
+	min-height: 400px;
 }
 #control h2{
 	font-size: 1.5em;
@@ -133,4 +134,83 @@ p.author{
 #phone{
 	width:100px;
 	margin: 50px 0 0 20px;
+}
+.green{
+	background-color:rgb(122, 225, 191);
+	min-height: 275px;
+}
+.icon{
+	text-align: center;
+}
+.icon span{
+	display: block;
+}
+.bottom h2{
+	font-size: 2.2em;
+	color:#fff;
+}
+#servers{
+	margin-top: 100px;
+}
+.bottom{
+	min-height: 500px;
+	background-color: #dcdcdc;
+}
+.bottom p{
+	font-size: 1.4em;
+	color:#fff;
+}
+.stripes{
+	display: inline;
+	float:left;
+	width:10%;
+	height:500px;
+}
+#s1{
+	background-color: #cccccc;
+}
+#s2{
+	background-color: #b3b3b3;
+}
+#s3{
+	background-color: #999999;
+}
+#s4{
+	background-color: #c0c0c0;
+}
+#s5{
+	background-color: #808080;
+}
+#s6{
+	background-color: #d4d4d4;
+}
+#s7{
+	background-color: #c7c7c7;
+}
+#s8{
+	background-color: #bbbbbb;
+}
+#s9{
+	background-color: #aeaeae;
+}
+#s10{
+	background-color: #dcdcdc;
+}
+.map , #world{
+	position:absolute;
+}
+#radial{
+	position:absolute;
+	margin-left: 30px;
+}
+
+#radial,#world{
+	top:110px;
+	left:30px;
+}
+#location{
+	position:relative;
+	top:-460px;
+	left:230px;
+	margin-left: 120px;
 }
