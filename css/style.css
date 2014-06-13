@@ -53,6 +53,23 @@ header {
 		left:190px;
 
 	}
+	.map{
+		width:100%;
+		position:relative;
+		left:110px;
+		top:50px;
+	}
+	
+	#location{
+		position: absolute;
+		top:290px;
+		right:290px;
+	}
+	#servers{
+		position:relative;
+		top:-40px;
+	}
+
 }
 header img{
 	width:300px;
@@ -133,11 +150,12 @@ p.author{
 }
 #phone{
 	width:100px;
-	margin: 50px 0 0 20px;
+	margin: 50px 0 0px 20px;
 }
 .green{
 	background-color:rgb(122, 225, 191);
 	min-height: 275px;
+	margin-top: 90px;
 }
 .icon{
 	text-align: center;
@@ -150,7 +168,7 @@ p.author{
 	color:#fff;
 }
 #servers{
-	margin-top: 100px;
+	margin-top:20px;
 }
 .bottom{
 	min-height: 500px;
@@ -196,21 +214,18 @@ p.author{
 #s10{
 	background-color: #dcdcdc;
 }
+
 .map , #world{
 	position:absolute;
 }
-#radial{
+#radial,#world{
 	position:absolute;
-	margin-left: 30px;
+	top:30px;
+	left:20px;
 }
 
-#radial,#world{
-	top:110px;
-	left:30px;
-}
-#location{
+#servers,#offer{
 	position:relative;
-	top:-460px;
-	left:230px;
-	margin-left: 120px;
+	top:-220px;
+	margin:0;
 }
