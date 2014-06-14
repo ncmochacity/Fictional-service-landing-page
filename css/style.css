@@ -131,6 +131,7 @@ p.author{
 }
 #control h2{
 	font-size: 1.5em;
+	font-weight: 700;
 	margin-bottom: 15px;
 }
 #control p{
@@ -162,6 +163,9 @@ p.author{
 }
 .icon span{
 	display: block;
+	font-weight:100;
+	text-align: center;
+	font-size: 1.6em;
 }
 .bottom h2{
 	font-size: 2.2em;
@@ -229,3 +233,50 @@ p.author{
 	top:-220px;
 	margin:0;
 }
+
+@-webkit-keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@-moz-keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+.animate{
+	-moz-transition:2s ease-in-out;
+	-webkit-transition:2s ease-in-out;
+	transition:2s ease-in-out;
+
+	-moz-animation:fadeIn ease-in 1,;
+	-webkit-animation:fadeIn ease-in 1,;
+	animation:fadeIn ease-in 1,;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+
+	-webkit-transform:translate(10em,0);
+	-moz-transform:translate(10em,0);
+	transform:translate(10em,0);
+}
+
+
+
+
