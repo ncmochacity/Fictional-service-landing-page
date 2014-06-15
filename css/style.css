@@ -160,6 +160,16 @@ p.author{
 }
 .icon{
 	text-align: center;
+	
+}
+.icons img {
+	height:0;width:0;
+	-webkit-transition: width height 1s ease;
+	-moz-transition: width height 1s ease;
+	transition: width height 1s ease;
+}
+.icon span{
+	opacity:0;
 }
 .icon span{
 	display: block;
@@ -234,49 +244,43 @@ p.author{
 	margin:0;
 }
 
-@-webkit-keyframes fadeIn{
-	from{
-		opacity:0;
-	}
-	to{
-		opacity:1;
-	}
-}
-@-moz-keyframes fadeIn{
-	from{
-		opacity:0;
-	}
-	to{
-		opacity:1;
-	}
-}
-@keyframes fadeIn{
-	from{
-		opacity:0;
-	}
-	to{
-		opacity:1;
-	}
+@-webkit-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+@-moz-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+@keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+
+.anim{
+	opacity:0;
 }
 .animate{
-	-moz-transition:2s ease-in-out;
-	-webkit-transition:2s ease-in-out;
-	transition:2s ease-in-out;
+	-moz-transition: 2s ease-in-out;
+	-webkit-transition: 2s ease-in-out;
+	transition: 2s ease-in-out;
 
-	-moz-animation:fadeIn ease-in 1,;
-	-webkit-animation:fadeIn ease-in 1,;
-	animation:fadeIn ease-in 1,;
-	-webkit-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
+	-moz-animation: fadeIn ease-in 1;
+	-webkit-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
 
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 
-	-webkit-transform:translate(10em,0);
-	-moz-transform:translate(10em,0);
-	transform:translate(10em,0);
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;	
+	animation-duration: 1s;
+}
+#phone.animate {
+	-webkit-transform: translate(14em,0);
+	-moz-transform: translate(14em,0);
+	transform: translate(14em,0);
 }
 
+#desktop.animate {
+	-webkit-transform: translate(3em,0);
+	-moz-transform: translate(3em,0);
+	transform: translate(3em,0);
+}
 
-
-
+.icons img.grow-img {
+	height:191px;
+	width:191px;
+}
