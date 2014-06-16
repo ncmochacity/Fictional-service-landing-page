@@ -162,7 +162,7 @@ p.author{
 	text-align: center;
 	
 }
-.icons img {
+.icon img {
 	height:0;width:0;
 	-webkit-transition: width height 1s ease;
 	-moz-transition: width height 1s ease;
@@ -196,7 +196,7 @@ p.author{
 	display: inline;
 	float:left;
 	width:10%;
-	height:500px;
+	height:0;
 }
 #s1{
 	background-color: #cccccc;
@@ -236,14 +236,39 @@ p.author{
 	position:absolute;
 	top:30px;
 	left:20px;
+	-webkit-animation-name:rotateRadial;
+	-webkit-animation-duration:10s;
+	-webkit-animation-timing-function:linear;
+
+	animation-name:rotateRadial;
+	animation-duration:10s;
+	animation-timing-function:linear;
 }
+@-webkit-keyframes rotateRadial{
+	from{
+		-webkit-transform:rotate(0deg);
+	}
+	to{
+		-webkit-transform:rotate(360deg);
+	}
+}
+@keyframes rotateRadial{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+
 
 #servers,#offer{
 	position:relative;
 	top:-220px;
 	margin:0;
-}
+	opacity: 0;
 
+}
 @-webkit-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
 @-moz-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
 @keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
@@ -251,15 +276,15 @@ p.author{
 .anim{
 	opacity:0;
 }
-.animate{
-	-moz-transition: 2s ease-in-out;
-	-webkit-transition: 2s ease-in-out;
-	transition: 2s ease-in-out;
-
+.animate,.animate-down{
+	-moz-transition: 2s ease-in;
+	-webkit-transition: 2s ease-in;
+	transition: 2s ease-in;
+/* use fadeIn animation defined, timing function: ease-in and repeat only 1 time*/
 	-moz-animation: fadeIn ease-in 1;
 	-webkit-animation: fadeIn ease-in 1;
 	animation: fadeIn ease-in 1;
-
+/*make sure that animation remains at the last keyframe: opacity: 1 when its complete */
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
@@ -267,6 +292,12 @@ p.author{
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;	
 	animation-duration: 1s;
+}
+.animate-down{
+	-webkit-transform:.5s ease-in-out;
+	-moz-transform:.5s ease-in-out;
+	transform:.5s ease-in-out;
+	height:500px;
 }
 #phone.animate {
 	-webkit-transform: translate(14em,0);
@@ -280,7 +311,7 @@ p.author{
 	transform: translate(3em,0);
 }
 
-.icons img.grow-img {
+.icon img.grow-img {
 	height:191px;
 	width:191px;
 }
